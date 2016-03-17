@@ -1,0 +1,11 @@
+<!ENTITY title.label "Been2Long Configuration">
+<!ENTITY closebutton.label "Close">
+<!ENTITY tabGeneral.label "General">
+<!ENTITY tabReminders.label "Reminders">
+<!ENTITY b2lfield.edit.label "Fieldname for Been2Long data">
+<!ENTITY b2lfield.edit.accesskey "F">
+<!ENTITY currentDateFormat.edit.label "Today&apos;s date in expected Dateformat">
+<!ENTITY currentDateFormat.edit.accesskey "D"> 
+<!ENTITY remindViaPopupWindow.Groupbox.Label "Remind via Popup Window">
+<!ENTITY showonstartup.edit.label "Show Been2Long Window on Startup">
+<!ENTITY showonstartup.edit.accesskey "S">

@@ -1,0 +1,11 @@
+<!ENTITY title.label "List of reminders">
+<!ENTITY close.button.label "Close">
+<!ENTITY close.button.accesskey "C">
+<!ENTITY config.button.label "Configuration">
+<!ENTITY config.button.accesskey "o">
+<!ENTITY about.button.label "About">
+<!ENTITY about.button.accesskey "A">
+<!ENTITY daysleft.label "Days left">
+<!ENTITY name.label "Name">
+<!ENTITY age.label "Age">
+<!ENTITY dateofbirth.label "Been2Long">

@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://been2long/locale/wdw_addedit.dtd" >
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+    resizable="true"
+           id="been2long_lookupwindow"
+      persist="width height"
+        style="min-width:400px;min-height:300px;">
+
+  <script src="window_lookup.js"/>
+
+  <iframe id="been2long_contactspanel" src="chrome://messenger/content/addressbook/abContactsPanel.xul" flex="1"/>
+
+</window>

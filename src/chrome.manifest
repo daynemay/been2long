@@ -1,0 +1,17 @@
+content	been2long	jar:chrome/been2long.jar!/content/
+locale	been2long	zh-CN	jar:chrome/been2long.jar!/locale/zh-CN/
+locale	been2long	zh-TW	jar:chrome/been2long.jar!/locale/zh-TW/
+locale	been2long	hr-HR	jar:chrome/been2long.jar!/locale/hr-HR/
+locale	been2long	nl-NL	jar:chrome/been2long.jar!/locale/nl-NL/
+locale	been2long	en-US	jar:chrome/been2long.jar!/locale/en-US/
+locale	been2long	fr-FR	jar:chrome/been2long.jar!/locale/fr-FR/
+locale	been2long	de-DE	jar:chrome/been2long.jar!/locale/de-DE/
+locale	been2long	hu-HU	jar:chrome/been2long.jar!/locale/hu-HU/
+locale	been2long	it-IT	jar:chrome/been2long.jar!/locale/it-IT/
+locale	been2long	ko-KR	jar:chrome/been2long.jar!/locale/ko-KR/
+locale	been2long	sk-SK	jar:chrome/been2long.jar!/locale/sk-SK/
+locale	been2long	es-ES	jar:chrome/been2long.jar!/locale/es-ES/
+locale	been2long	tr-TR	jar:chrome/been2long.jar!/locale/tr-TR/
+overlay	chrome://messenger/content/addressbook/abContactsPanel.xul	chrome://been2long/content/overlay_contactsPanel.xul
+overlay	chrome://messenger/content/messenger.xul	chrome://been2long/content/ovl_been2long.xul
+overlay chrome://messenger/content/messengercompose/messengercompose.xul	chrome://been2long/content/composeWindow.xul

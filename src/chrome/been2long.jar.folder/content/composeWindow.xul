@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE overlay SYSTEM "chrome://messenger/locale/messengercompose/messengercompose.dtd">
+
+<overlay id="been2longSendOverlay" 
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script src="chrome://messenger/content/dateFormat.js"/>
+
+  <script type="application/x-javascript" 
+          src="chrome://been2long/content/global.js"/>
+
+  <script type="application/x-javascript" 
+          src="chrome://been2long/content/composeWindow.js"/>
+
+</overlay>

@@ -1,0 +1,21 @@
+<!ENTITY title.label "Been2Long since you wrote to...">
+
+<!ENTITY name.label "Name">
+<!ENTITY regularity.label "Email every ... days">
+<!ENTITY lastwrote.label "Last emailed on">
+<!ENTITY dayslate.label "">
+<!ENTITY add.button.label "Add...">
+<!ENTITY add.button.accesskey "A">
+
+<!ENTITY edit.button.label "Edit...">
+<!ENTITY edit.button.accesskey "E">
+<!ENTITY delete.button.label "Delete">
+<!ENTITY delete.button.accesskey "D">
+
+<!ENTITY close.button.label "Close">
+<!ENTITY close.button.accesskey "C">
+
+<!ENTITY config.button.label "Configuration">
+<!ENTITY config.button.accesskey "F">
+<!ENTITY about.button.label "About">
+<!ENTITY about.button.accesskey "B">

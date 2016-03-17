@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://been2long/locale/wdw_b2lnotifications.dtd">
+ 
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+        title="&title.label;" 
+       onload="displayAllReminders();" 
+    resizable="true"
+           id="wdw_b2lnotifications"
+      persist="width height"
+        style="min-width:400px;min-height:300px;"
+   windowtype="been2long">
+ 
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="been2long-strings" 
+                  src="chrome://been2long/locale/wdw_b2lnotifications.properties"/>
+  </stringbundleset>
+
+  <script src="wdw_b2lnotifications.js"/>
+  <script src="global.js"/>
+  <script src="chrome://messenger/content/dateFormat.js"/>
+
+  <listbox id="theListBox"  
+           style="min-width:400px;" 
+           ondblclick="listBoxDblClick();"
+           flex="1">     
+
+    <listcols>
+      <listcol width="25%" flex="1"/>
+      <listcol width="25%" flex="1"/>
+      <listcol width="25%" flex="1"/>
+      <listcol width="25%" flex="1"/>
+    </listcols>
+          
+    <listhead>
+      <listheader width="25%" flex="1" label="&name.label;" />      
+      <listheader width="25%" flex="1" label="&dayslate.label;"/>
+      <listheader width="25%" flex="1" label="&lastwrote.label;"/>     
+      <listheader width="25%" flex="1" label="&regularity.label;"/>     
+    </listhead>   
+ 
+  </listbox>    
+
+  <radiogroup id="been2long_showallordue" oncommand="displayAllReminders();">
+    <radio id="been2long_all" label="All notifications"/>
+    <radio id="been2long_due" label="Due notifications" selected="true"/>    
+  </radiogroup>
+
+  <separator class="groove" orient="horizontal"/>
+
+  <hbox>
+
+
+    <button id="addbeen2long"
+            label="&add.button.label;"  
+            accesskey="&add.button.accesskey;" 
+            oncommand="addB2L();"/>
+
+    <button id="editbeen2long"
+            label="&edit.button.label;"  
+            accesskey="&edit.button.accesskey;" 
+            oncommand="editB2L();"/>
+
+    <button id="deletebeen2long"
+            label="&delete.button.label;"  
+            accesskey="&delete.button.accesskey;" 
+            oncommand="deleteB2L();"/>
+
+    <spacer flex="1"/>
+
+    <button id="configbeen2long"
+            label="&config.button.label;"  
+            accesskey="&config.button.accesskey;" 
+            oncommand="configure();"/>
+
+    <button id="aboutbeen2long"
+            label="&about.button.label;" 
+            accesskey="&about.button.accesskey;" 
+            oncommand="about();"/>
+
+    <button id="closebeen2long"
+            label="&close.button.label;" 
+            accesskey="&close.button.accesskey;" 
+            oncommand="do_close();"/>
+  
+  </hbox>
+ 
+</window>

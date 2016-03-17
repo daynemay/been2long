@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+<!DOCTYPE window SYSTEM "chrome://been2long/locale/wdw_addedit.dtd" >
+
+<window xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+       onload="initialiseAddEditWindow();" 
+    resizable="true"
+           id="been2longaddedit"
+      persist="width height">
+  <!-- style="min-width:400px;min-height:300px;" -->
+
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="been2long-strings" 
+                  src="chrome://been2long/locale/wdw_b2lnotifications.properties"/>
+  </stringbundleset>
+
+  <script src="wdw_addedit.js"/>
+  <script src="wdw_b2lnotifications.js"/>
+  <script src="global.js"/>
+  <script src="chrome://messenger/content/dateFormat.js"/>
+ 
+      <vbox>
+
+        <hbox align="center">
+
+          <button id="been2longAddressBook" label="Email Address..." oncommand="openAddressBook();"/>
+          <textbox id="been2longEmailAddress" />
+
+        </hbox>
+
+        <separator class="thin"/>
+
+        <hbox align="center">
+
+          <label value="Write Every"/>
+
+          <textbox id="been2longRegularity" size="4" />
+
+          <label value="Days" />
+
+        </hbox>
+
+        <separator class="thin"/>
+
+        <hbox align="center">
+
+          <!--label value="Last Wrote On" /-->
+
+          <textbox id="been2longLastWrote" disabled="true" hidden="true"/>
+ 
+       </hbox>
+
+        <separator class="groove" orient="horizontal"/>
+
+          <hbox align="center">
+
+            <button id="been2longAddEditOk" label="OK" oncommand="okPressed();"/>
+
+            <button id="been2longAddEditCancel" label="Cancel" oncommand="cancelPressed();"/>
+
+          </hbox>
+
+      </vbox>
+
+</window>

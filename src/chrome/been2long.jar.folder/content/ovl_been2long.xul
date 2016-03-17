@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://been2long/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://been2long/locale/ovl_been2long.dtd">
+
+<overlay id="been2long-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="been2long-strings" 
+                  src="chrome://been2long/locale/wdw_been2long.properties"/>
+  </stringbundleset>
+  
+  <script src="global.js"/>
+  <script src="config.js"/>
+  <script src="gl_Ligthning.js"/>
+  <script src="ovl_been2long.js"/>
+  <script src="chrome://messenger/content/dateFormat.js"/>
+  
+  <menupopup id="taskPopup">
+
+    <menuseparator insertafter="menu_preferences"/>    
+    <menuitem oncommand="been2long.onMenuItemCommand(event);"
+              label="&been2long.label;" 
+              id="been2long-item" 
+              class="menuitem-iconic" 
+              accesskey="&been2long.accesskey;"/>
+
+  </menupopup>
+
+</overlay>

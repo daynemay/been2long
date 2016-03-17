@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/global.css"  type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % wdw_configurationDTD SYSTEM "chrome://been2long/locale/wdw_configuration.dtd" >
+ %wdw_configurationDTD;
+<!ENTITY % abCardOverlayDTD SYSTEM "chrome://messenger/locale/addressbook/abCardOverlay.dtd" >
+ %abCardOverlayDTD;
+]>
+ 
+<prefwindow xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul" 
+            title="&title.label;">
+
+  <stringbundleset id="stringbundleset">
+
+    <stringbundle id="been2long-strings" 
+                  src="chrome://been2long/locale/wdw_b2lnotifications.properties"/>
+
+  </stringbundleset>
+ 
+  <script src="global.js"/>
+ 
+  <prefpane id="sw2-stock-pane" 
+            label="Stock Settings">
+      
+    <preferences>
+      <preference id="extensions.been2long@daynemay.b2lfieldname"
+                  name="extensions.been2long@daynemay.b2lfieldname" 
+                  type="string"/>                
+                                        
+      <preference id="extensions.been2long@daynemay.showonstartup"
+                  name="extensions.been2long@daynemay.showonstartup" 
+                  type="bool"/>
+        	
+    </preferences>
+      
+    <!-- ==================================================================== -->
+ 
+    <separator class="thin"/>
+
+    <hbox align="center">
+
+      <label value="&b2lfield.edit.label;"
+             accesskey="&b2lfield.edit.accesskey;" 
+             control="b2lFieldEdit"/>
+             
+      <menulist id="b2lFieldEdit"
+                preference="extensions.been2long@daynemay.b2lfieldname">  
+
+        <menupopup id = "b2lfieldEditMenu">
+
+          <menuitem label="&Custom1.label;" 
+                    value="Custom1"/>
+          <menuitem label="&Custom2.label;" 
+                    value="Custom2"/>
+          <menuitem label="&Custom3.label;" 
+                    value="Custom3"/>
+          <menuitem label="&Custom4.label;" 
+                    value="Custom4"/>
+
+        </menupopup>
+
+      </menulist>
+            
+    </hbox>
+   		
+    <separator class="thin"/>
+
+      <hbox align="center">
+
+        <label value="&showonstartup.edit.label;" 
+               accesskey="&showonstartup.edit.accesskey;" 
+               control="showonstartupEdit"/>
+
+        <checkbox id="showonstartupEdit" 
+                  preference="extensions.been2long@daynemay.showonstartup"/>
+
+      </hbox>
+
+      <separator class="thin"/>
+
+  </prefpane>
+ 
+</prefwindow>
