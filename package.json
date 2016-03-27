@@ -1,0 +1,27 @@
+{
+  "name": "been2long",
+  "version": "0.0.1",
+  "description": "Thunderbird extension for contact reminders",
+  "license": "",
+  "repository": "daynemay/been2long",
+  "bugs": { "url" : "http://github.com/daynemay/been2long/issues"
+  },
+  "author": {
+    "name": "Dayne May
+    "email": "daynemay@gmail.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "gulp"
+  },
+  "keywords": [
+  ],
+  "devDependencies": {
+    "gulp-qunit": "~0.2.1",
+    "gulp-util": "~2.2.14",
+    "gulp": "~3.5.1"
+  }
+}
+
