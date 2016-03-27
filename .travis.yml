@@ -1,0 +1,5 @@
+# TODO: do with dependencies instead
+
+language: node_js
+node_js:
+  - "0.10"
