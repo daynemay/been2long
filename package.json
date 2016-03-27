@@ -7,11 +7,11 @@
   "bugs": { "url" : "http://github.com/daynemay/been2long/issues"
   },
   "author": {
-    "name": "Dayne May
+    "name": "Dayne May",
     "email": "daynemay@gmail.com"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=2.0.0"
   },
   "scripts": {
     "test": "gulp"
