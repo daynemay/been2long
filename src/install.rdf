@@ -3,11 +3,11 @@
  xmlns:em="http://www.mozilla.org/2004/em-rdf#">
   <Description about="urn:mozilla:install-manifest">
     <em:id>been2long@dayne.may</em:id>
-    <em:version>1.0</em:version>
+    <em:version>0.0.01</em:version>
     <em:type>2</em:type> <!-- type 2: extension -->
     
-    <em:name>Been2Long</em:name>
-    <em:description>Been2Long will remind you to get in touch with your contacts.
+    <em:name>been2long</em:name>
+    <em:description>been2long will remind you to get in touch with your contacts.
     </em:description>
     
     <em:creator>Dayne May</em:creator>
@@ -22,5 +22,4 @@
       </Description>
     </em:targetApplication>
   </Description>  
-
 </RDF>
